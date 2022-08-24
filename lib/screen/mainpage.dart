@@ -15,6 +15,7 @@ class mainpage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              h_size30,
               Text("Text Translation"),
               Padding(
                 padding: const EdgeInsets.only(top: 10, bottom: 10),
