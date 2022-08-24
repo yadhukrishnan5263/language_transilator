@@ -1,6 +1,6 @@
 // To parse this JSON data, do
 //
-//     final allLanguagesModel = allLanguagesModelFromJson(jsonString);
+//     final transilatorModel = transilatorModelFromJson(jsonString);
 
 import 'dart:convert';
 

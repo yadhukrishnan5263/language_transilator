@@ -43,23 +43,32 @@ class buttons extends StatelessWidget{
              child: Icon(Icons.compare_arrows),
            ),
            Expanded(
-             child: Container(
-               decoration: BoxDecoration(
-                   borderRadius: BorderRadius.circular(8),
-                   color: Colors.white12),
-               child: Row(
-                 mainAxisAlignment: MainAxisAlignment.center,
-                 children: [
-                   Padding(
-                     padding: const EdgeInsets.all(5.0),
-                     child: CircleAvatar(
-                       backgroundColor: Colors.cyanAccent,
+             child: GestureDetector(
+               child: Container(
+                 decoration: BoxDecoration(
+                     borderRadius: BorderRadius.circular(8),
+                     color: Colors.white12),
+                 child: Row(
+                   mainAxisAlignment: MainAxisAlignment.center,
+                   children: [
+                     Padding(
+                       padding: const EdgeInsets.all(5.0),
+                       child: CircleAvatar(
+                         backgroundColor: Colors.cyanAccent,
+                       ),
                      ),
-                   ),
-                   SizedBox(width: 5,),
-                   Text('Malayalam')
-                 ],
+                     SizedBox(width: 5,),
+                     Text('Malayalam')
+                   ],
+                 ),
                ),
+               onTap: (){
+                 showModalBottomSheet(
+                     shape:RoundedRectangleBorder(borderRadius:BorderRadius.only(topRight: Radius.circular(20),topLeft: Radius.circular(20))) ,
+                     context: context, builder: (context){
+                   return bottomsheet();
+                 });
+               },
              ),
            ),
          ],
