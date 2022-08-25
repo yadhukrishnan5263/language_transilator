@@ -31,11 +31,13 @@ class _textfields1State extends State<textfields1> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             TextField(
+              style: TextStyle(color: Colors.white),
               controller: _textlength,
               maxLines: 5,
               expands: false,
               decoration: InputDecoration(
                 hintText: "hello!",
+                hintStyle: TextStyle(color: Colors.white),
                 border: InputBorder.none,
               ),
               onChanged:(String) {
@@ -85,11 +87,13 @@ class _textfield2State extends State<textfield2> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             TextField(
+              style: TextStyle(color: Colors.white),
               controller: _textlength,
               maxLines: 5,
               expands: false,
               decoration: InputDecoration(
                 hintText: "transilated text!",
+                hintStyle: TextStyle(color: Colors.white),
                 border: InputBorder.none,
               ),
               onChanged: (String){

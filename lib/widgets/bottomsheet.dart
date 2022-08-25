@@ -45,7 +45,7 @@ class bottomsheet extends StatelessWidget {
               child: ListTile(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                 selectedColor: Colors.deepOrangeAccent,
-                tileColor: Colors.white12,
+                tileColor: Colors.white54,
                 leading: CircleAvatar(backgroundColor: Colors.pink,),
                 title: Text(languages[index]),
                 onTap: (){

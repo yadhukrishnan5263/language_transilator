@@ -25,12 +25,13 @@ class buttons extends StatelessWidget{
                        ),
                      ),
                      SizedBox(width: 5,),
-                     Text('Germany')
+                     Text('Germany',style: TextStyle(color: Colors.white))
                    ],
                  ),
                ),
                onTap: (){
                  showModalBottomSheet(
+                   backgroundColor: Colors.grey[300],
                    shape:RoundedRectangleBorder(borderRadius:BorderRadius.only(topRight: Radius.circular(20),topLeft: Radius.circular(20))) ,
                      context: context, builder: (context){
                    return bottomsheet();
@@ -58,12 +59,13 @@ class buttons extends StatelessWidget{
                        ),
                      ),
                      SizedBox(width: 5,),
-                     Text('Malayalam')
+                     Text('Malayalam',style: TextStyle(color: Colors.white),)
                    ],
                  ),
                ),
                onTap: (){
                  showModalBottomSheet(
+                     backgroundColor: Colors.grey[300],
                      shape:RoundedRectangleBorder(borderRadius:BorderRadius.only(topRight: Radius.circular(20),topLeft: Radius.circular(20))) ,
                      context: context, builder: (context){
                    return bottomsheet();
